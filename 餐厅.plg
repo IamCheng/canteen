@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ²ÍÌü - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8646.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/²ÍÌü.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Users\Administration\Desktop\²ÍÌü\LoginDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8646.tmp" 
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP8657.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/²ÍÌü.pdb" /debug /machine:I386 /out:"Debug/²ÍÌü.exe" /pdbtype:sept 
+".\Debug\ADOEx.obj"
+".\Debug\CTRegDlg.obj"
+".\Debug\foodDlg.obj"
+".\Debug\LoginDlg.obj"
+".\Debug\orderDlg.obj"
+".\Debug\SrchDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TabSheet.obj"
+".\Debug\UserRegDlg.obj"
+".\Debug\workerDlg.obj"
+".\Debug\²ÍÌü.obj"
+".\Debug\²ÍÌüDlg.obj"
+".\Debug\²ÍÌü.res"
+]
+Creating command line "link.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP8657.tmp"
+<h3>Output Window</h3>
+Compiling...
+LoginDlg.cpp
+Linking...
+Creating temporary file "C:\Users\ADMINI~1\AppData\Local\Temp\RSP880C.tmp" with contents
+[
+/nologo /o"Debug/²ÍÌü.bsc" 
+".\Debug\StdAfx.sbr"
+".\Debug\ADOEx.sbr"
+".\Debug\CTRegDlg.sbr"
+".\Debug\foodDlg.sbr"
+".\Debug\LoginDlg.sbr"
+".\Debug\orderDlg.sbr"
+".\Debug\SrchDlg.sbr"
+".\Debug\TabSheet.sbr"
+".\Debug\UserRegDlg.sbr"
+".\Debug\workerDlg.sbr"
+".\Debug\²ÍÌü.sbr"
+".\Debug\²ÍÌüDlg.sbr"]
+Creating command line "bscmake.exe @C:\Users\ADMINI~1\AppData\Local\Temp\RSP880C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+²ÍÌü.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

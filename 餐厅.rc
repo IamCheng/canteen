@@ -1,0 +1,391 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\餐厅.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\餐厅.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 餐厅"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "餐厅 1.0 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权归程鑫所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MY_DIALOG DIALOGEX 0, 0, 401, 287
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "餐厅"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",TCS_BUTTONS,0,0,399,
+                    287
+END
+
+IDD_DIALOG_FOOD DIALOG DISCARDABLE  0, 0, 287, 212
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "添加菜的信息",IDC_STATIC,47,32,187,107
+    CTEXT           "菜ID：",IDC_STATIC,66,49,23,13,SS_CENTERIMAGE
+    CTEXT           "菜名：",IDC_STATIC,139,49,25,13,SS_CENTERIMAGE
+    CTEXT           "价格：",IDC_STATIC,66,76,24,13,SS_CENTERIMAGE
+    CTEXT           "种类：",IDC_STATIC,66,107,24,13,SS_CENTERIMAGE
+    CTEXT           "折扣：",IDC_STATIC,139,76,26,13,SS_CENTERIMAGE
+    CTEXT           "餐厅：",IDC_STATIC,139,107,24,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_id,92,49,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_price,92,77,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_kind,92,108,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_name,165,49,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_discnt,165,77,42,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,165,108,42,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "确定",IDC_BUTTON_sure,75,153,48,14
+    PUSHBUTTON      "清除",IDC_BUTTON_cancel,145,154,50,14,NOT WS_TABSTOP
+END
+
+IDD_DIALOG_worker DIALOG DISCARDABLE  0, 0, 251, 206
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "工作人员信息",IDC_STATIC,29,26,191,122
+    CTEXT           "工号：",IDC_STATIC,33,52,23,13,SS_CENTERIMAGE
+    CTEXT           "工资：",IDC_STATIC,134,51,22,13,SS_CENTERIMAGE
+    CTEXT           "名字：",IDC_STATIC,33,79,24,13,SS_CENTERIMAGE
+    CTEXT           "年龄：",IDC_STATIC,33,110,24,13,SS_CENTERIMAGE
+    RTEXT           "工作餐厅：",IDC_STATIC,115,82,41,11
+    EDITTEXT        IDC_EDIT_worker_id,58,52,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_worker_name,58,81,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_age,58,112,50,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_salary,157,51,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,157,82,50,12,ES_AUTOHSCROLL | WS_DISABLED
+    PUSHBUTTON      "确定",IDC_BUTTON_sure,40,160,48,14
+    PUSHBUTTON      "取消",IDC_BUTTON_cancel,138,160,50,14,NOT WS_TABSTOP
+    CTEXT           "欢迎添加新员工",IDC_STATIC,74,5,91,18,SS_CENTERIMAGE
+    CTEXT           "职位：",IDC_STATIC,132,112,24,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_job,157,114,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_pwd,58,132,51,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CTEXT           "密码：",IDC_STATIC,32,131,23,14,SS_CENTERIMAGE
+END
+
+IDD_DIALOG_count DIALOGEX 0, 0, 293, 198
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 10, "System"
+BEGIN
+    CTEXT           "餐厅名称",IDC_STATIC,101,4,71,20,SS_CENTERIMAGE
+    GROUPBOX        "查询方式",IDC_STATIC_caption,4,23,49,173
+    CONTROL         "按个人",IDC_RADIO_person,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,8,42,40,10
+    CONTROL         "按时间",IDC_RADIO_time,"Button",BS_AUTORADIOBUTTON,8,82,
+                    40,10
+    CONTROL         "餐厅总额",IDC_RADIO_canteen,"Button",BS_AUTORADIOBUTTON,
+                    8,162,44,10
+    CONTROL         "按种类",IDC_RADIO_kind,"Button",BS_AUTORADIOBUTTON,8,
+                    122,40,10
+    GROUPBOX        "查询条件",IDC_STATIC,58,23,71,175
+    PUSHBUTTON      "执行查询（run）",IDC_BUTTON_srch,244,156,45,38,
+                    BS_MULTILINE
+    COMBOBOX        IDC_COMBO_id,60,47,68,100,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "顾客id:",IDC_STATIC_id,60,33,29,10
+    COMBOBOX        IDC_COMBO_name,60,78,68,65,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "顾客姓名：",IDC_STATIC_name,61,63,49,11
+    COMBOBOX        IDC_COMBO_kind,60,106,68,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "种类：",IDC_STATIC,60,94,34,8
+    EDITTEXT        IDC_EDIT1,134,156,104,38,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    WS_DISABLED | NOT WS_BORDER
+    LTEXT           "开始时间：",IDC_STATIC_time,59,122,57,10
+    GROUPBOX        "结果：",IDC_STATIC,132,149,110,47
+    CONTROL         "List1",IDC_LIST_list,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,130,27,163,119
+    EDITTEXT        IDC_EDIT_begin,59,136,67,12,ES_AUTOHSCROLL
+    LTEXT           "结束时间：",IDC_STATIC,59,152,63,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_end,59,169,67,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_ch,236,10,52,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_COMBO_ch
+    CTEXT           "选择餐厅",IDC_STATIC_ch,193,9,35,13,SS_CENTERIMAGE
+END
+
+IDD_DIALOG_CTReg DIALOG DISCARDABLE  0, 0, 305, 192
+STYLE DS_MODALFRAME | WS_CHILD
+FONT 10, "System"
+BEGIN
+    CTEXT           "餐厅注册",IDC_STATIC,107,2,62,13,SS_CENTERIMAGE
+    GROUPBOX        "餐厅详细信息",IDC_STATIC,36,18,222,118
+    CTEXT           "餐厅ID：",IDC_STATIC,43,44,33,13,SS_CENTERIMAGE
+    CTEXT           "员工人数：",IDC_STATIC,137,44,43,13,SS_CENTERIMAGE
+    CTEXT           "餐厅名字：",IDC_STATIC,40,71,39,13,SS_CENTERIMAGE
+    CTEXT           "注册时间：",IDC_STATIC,38,99,38,13,SS_CENTERIMAGE
+    RTEXT           "餐厅地址：",IDC_STATIC,139,74,41,11
+    EDITTEXT        IDC_EDIT_ct_id,80,44,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_ct_name,80,73,50,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_regtime,80,101,50,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_num,187,45,46,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_address,188,72,46,12,ES_AUTOHSCROLL
+    LTEXT           "注册人：",IDC_STATIC,139,99,41,11
+    EDITTEXT        IDC_EDIT_reg_person,188,97,45,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "注册",IDC_BUTTON_reg,35,142,223,29
+END
+
+IDD_DIALOG_userReg DIALOG DISCARDABLE  0, 0, 298, 195
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT_name,117,46,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_id,117,67,69,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_total,117,88,69,14,ES_AUTOHSCROLL
+    CTEXT           "姓名：",IDC_STATIC_name,71,46,31,14,SS_CENTERIMAGE
+    CTEXT           "消费ID:",IDC_STATIC_id,71,68,31,14,SS_CENTERIMAGE
+    CTEXT           "金额：",IDC_STATIC,71,88,31,14,SS_CENTERIMAGE
+    CTEXT           "密码：",IDC_STATIC,70,108,31,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_pwd,117,108,69,14,ES_PASSWORD | ES_AUTOHSCROLL
+    CTEXT           "顾客注册：",IDC_STATIC,83,16,84,18,SS_CENTERIMAGE
+    PUSHBUTTON      "注册",IDC_BUTTON_reg,64,139,50,14
+    PUSHBUTTON      "清除",IDC_BUTTON_cancel,152,140,50,14
+END
+
+IDD_DIALOG_order DIALOG DISCARDABLE  0, 0, 300, 209
+STYLE WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,0,15,300,100
+    CTEXT           "订餐信息",IDC_STATIC,112,1,66,12,SS_CENTERIMAGE
+    COMBOBOX        IDC_COMBO_menus,56,125,140,51,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CTEXT           "菜谱：",IDC_STATIC,12,125,37,13,SS_CENTERIMAGE
+    PUSHBUTTON      "点菜",IDC_BUTTON_add,0,141,55,20
+    PUSHBUTTON      "删除",IDC_BUTTON_del,0,164,55,20
+    CTEXT           "数量：",IDC_STATIC_num,202,124,24,16,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT1,227,124,69,16,ES_CENTER | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    PUSHBUTTON      "结算",IDC_BUTTON_submit,0,186,55,20
+    CONTROL         "刷卡",IDC_RADIO_card,"Button",BS_AUTORADIOBUTTON,220,
+                    158,48,17
+    GROUPBOX        "付款方式",IDC_STATIC,201,147,97,62
+    CONTROL         "现金",IDC_RADIO_cash,"Button",BS_AUTORADIOBUTTON,220,
+                    180,48,17
+    EDITTEXT        IDC_EDIT_cardnum,101,170,92,15,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CTEXT           "卡号：",ID_static_cardnum,61,169,32,15,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE
+END
+
+IDD_DIALOG_login DIALOG DISCARDABLE  0, 0, 287, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "对话"
+FONT 10, "System"
+BEGIN
+    CONTROL         137,IDC_STATIC,"Static",SS_BITMAP | SS_CENTERIMAGE,0,0,
+                    287,69
+    GROUPBOX        "登录",IDC_STATIC,35,71,230,73
+    CTEXT           "账号：",IDC_STATIC,76,81,35,15,SS_CENTERIMAGE
+    CTEXT           "密码：",IDC_STATIC,76,101,35,15,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_id,115,81,94,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_pwd,115,102,94,15,ES_PASSWORD | ES_AUTOHSCROLL
+    CONTROL         "校方管理员",IDC_RADIO_admin,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,80,126,49,10
+    CONTROL         "顾客",IDC_RADIO_comsumer,"Button",BS_AUTORADIOBUTTON,
+                    187,126,29,10
+    CONTROL         "餐厅员工",IDC_RADIO_canteen,"Button",BS_AUTORADIOBUTTON,
+                    137,126,44,10
+    PUSHBUTTON      "登录",IDC_BUTTON_login,69,153,50,14
+    PUSHBUTTON      "取消",IDC_BUTTON_cancel,151,153,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "餐厅 Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "餐厅\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "餐厅.EXE\0"
+            VALUE "ProductName", "餐厅 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MY_DIALOG, DIALOG
+    BEGIN
+        VERTGUIDE, 329
+    END
+
+    IDD_DIALOG_CTReg, DIALOG
+    BEGIN
+        RIGHTMARGIN, 304
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\login.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 餐厅(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\餐厅.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
